@@ -55,4 +55,4 @@ Obs: O nome da chave estrangeira não precisa ser igual ao nome da chave primár
 
 ## Leia+
 
-[Conversão entre o DER e o Modelo Relacional](https://github.com/IgorAvilaPereira/bd2022_1sem/blob/main/8conversao-entre-modelos-er-e-relacional.md)
+[Conversão entre o DER e o Modelo Relacional](https://github.com/IgorAvilaPereira/iobd2023_1sem/blob/main/8conversao-entre-modelos-er-e-relacional.md)
