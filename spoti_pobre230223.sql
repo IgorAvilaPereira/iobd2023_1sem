@@ -88,7 +88,13 @@ INSERT INTO playlist_musica (playlist_id, musica_id) VALUES
 (3,5),
 (3,6);
 
--- spoti_pobre=# ALTER TABLE usuario ADD COLUMN data_nascimento DATE CHECK(EXTRACT(YEAR FROM data_nascimento)>=1900);
+ALTER TABLE usuario ADD COLUMN data_nascimento DATE CHECK(EXTRACT(YEAR FROM data_nascimento)>=1900);
+
+INSERT INTO usuario (email, senha, data_nascimento) VALUES ('frederico@aluno.riogrande.ifrs.edu.br', 'fred', '2003-01-02');
+
+UPDATE usuario SET data_nascimento = '1987-05-05' WHERE id = 3;
+
+
 -- spoti_pobre=# SELECT nome, to_char(data_nascimento,'DD/MM/YYYY') FROM usuario;
 -- spoti_pobre=# select * from usuario where nome is null;
 -- spoti_pobre=# SELECT UPPER(titulo) as titulo_maiusculo, titulo FROM album;
